@@ -7,5 +7,5 @@ import retrofit2.http.GET
 
 interface JsonPlaceHolderService {
     @GET("users")
-    fun getUsers(): Deferred<List<UserDto>>
+    suspend fun getUsers(): List<UserDto>
 }
